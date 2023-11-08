@@ -1,0 +1,129 @@
+@import '../../../../../../styles/variables';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.container {
+	position: relative;
+
+	.status {
+		position: absolute;
+		top: -42px;
+		right: -6px;
+	}
+
+	.item {
+		display: flex;
+		// align-items: center;
+
+		& + .item {
+			margin-top: 10px;
+		}
+	}
+
+	.text_1 {
+		color: #303c4f;
+		font-weight: 500;
+		font-size: 14px;
+		width: 112px;
+	}
+
+	.text_2 {
+		color: #303c4f;
+		font-weight: 500;
+		font-size: 14px;
+		flex: 1;
+	}
+}
+
+.user_info {
+	display: flex;
+	gap: 12px;
+
+	.avatar {
+		position: relative;
+		width: 70px;
+		height: 70px;
+
+		.image {
+			border-radius: 50%;
+		}
+	}
+
+	.gender {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #ff6a55;
+		border: 2px solid #ffffff;
+
+		&.male {
+			background: #42d684;
+		}
+	}
+
+	.icon_female {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.box_des {
+		.name {
+			font-weight: 600;
+			font-size: 16px;
+			color: #303c4f;
+			margin-bottom: 4px;
+		}
+
+		.des_item {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			color: #7e8995;
+
+			& + .des_item {
+				margin-top: 4px;
+			}
+
+			.icon_des {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.text_des {
+				font-weight: 500;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.text_symptom {
+	font-weight: 400;
+	font-size: 14px;
+	color: #4d5a66;
+	margin-bottom: 8px;
+}
+
+@media (max-width: $widthTablet) {
+	.wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: $widthMobile) {
+	.wrapper {
+		grid-template-columns: 1fr;
+	}
+}

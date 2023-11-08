@@ -1,0 +1,48 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+
+	h3 {
+		margin-top: 24px;
+		color: #29303c;
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	p {
+		margin-top: 8px;
+		color: #788a9b;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+
+.img {
+	position: relative;
+	width: 20%;
+	min-width: 200px;
+}
+
+@media (max-width: 764px) {
+	.container {
+		h3 {
+			margin-top: 8px;
+			font-weight: 600;
+			font-size: 15px;
+		}
+
+		p {
+			margin-top: 4px;
+			font-size: 12px;
+		}
+	}
+
+	.img {
+		position: relative;
+		width: 33%;
+	}
+}

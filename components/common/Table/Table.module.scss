@@ -1,0 +1,90 @@
+@import '../../../styles/variables';
+
+.container {
+	overflow-x: auto;
+
+	&::-webkit-scrollbar {
+		height: 6px;
+	}
+
+	table,
+	td,
+	th {
+		text-align: left;
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	th,
+	td {
+		line-height: 16px;
+	}
+
+	th {
+		background: #f8f8f8;
+		padding: 12px;
+		white-space: nowrap;
+		padding-right: 16px;
+		font-weight: 500;
+		font-size: 14px;
+		color: #364054;
+
+		&:nth-child(1) {
+			padding-left: 12px;
+		}
+
+		.title {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			color: #7e8995;
+		}
+
+		.icon_title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 20px;
+			height: 20px;
+			color: #7e8995;
+		}
+	}
+
+	td {
+		padding: 16px 12px;
+		border-bottom: 1px solid #edf2f6;
+		font-weight: 500;
+		font-size: 14px;
+		color: #303c4f;
+
+		&:nth-child(1) {
+			padding-left: 12px;
+		}
+	}
+
+	tr {
+		transition: 0.3s;
+
+		&:hover {
+			background: linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 0) 0%,
+					#f4f7fa 100%
+				),
+				#ffffff;
+		}
+	}
+}
+
+@media (max-width: $widthMobile) {
+	.container {
+		th {
+			.icon_title {
+				display: none;
+			}
+		}
+	}
+}

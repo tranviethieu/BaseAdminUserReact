@@ -1,0 +1,17 @@
+@import '../../../../styles/variables';
+
+.container {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 16px;
+	}
+}
+
+@media (max-width: $widthTablet) {
+	.container {
+		.main {
+			grid-template-columns: 1fr;
+		}
+	}
+}

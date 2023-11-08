@@ -1,0 +1,49 @@
+.info {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	min-width: 180px;
+
+	.avatar {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.fit_content {
+	cursor: pointer;
+	width: fit-content;
+}
+
+.control {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 6px;
+}
+
+.item {
+	cursor: pointer;
+	user-select: none;
+	width: 26px;
+	height: 26px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
+
+.confirm {
+	background: #0071ff;
+	border: 1px solid rgba(85, 174, 255, 0.2);
+}
+
+.detail {
+	background: #f4f4f4;
+	border: 1px solid #edf2f6;
+}

@@ -1,0 +1,24 @@
+@import '../../../../styles/variables';
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+@media (max-width: $widthTablet) {
+	.container {
+		grid-template-columns: 1fr;
+		gap: 8px;
+	}
+
+	.col {
+		gap: 8px;
+	}
+}

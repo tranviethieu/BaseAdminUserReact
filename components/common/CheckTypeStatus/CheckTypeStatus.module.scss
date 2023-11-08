@@ -1,0 +1,125 @@
+.container {
+	width: fit-content;
+	border-radius: 6px;
+	padding: 4px 8px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	white-space: nowrap;
+
+	&.chua_thanh_toan {
+		background: #ff8849;
+	}
+
+	&.cho_xac_nhan {
+		background: #7d8c9e;
+	}
+
+	&.da_xac_nhan {
+		background: #00b2ff;
+	}
+
+	&.da_duyet {
+		background: #42d684;
+	}
+
+	&.cho_kham {
+		background: #edad31;
+	}
+
+	&.den_luot_kham {
+		background: #738fd9;
+	}
+
+	&.dang_kham {
+		background: #007eda;
+	}
+
+	&.da_kham {
+		background: #76b727;
+	}
+
+	&.tu_choi {
+		background: #df54ca;
+	}
+
+	&.da_huy {
+		background: #dc5050;
+	}
+
+	&.sm {
+		border-radius: 6px;
+		padding: 2px 8px;
+		border-radius: 4px;
+
+		.dot {
+			display: none;
+		}
+
+		.title {
+			font-weight: 400;
+			font-size: 12px;
+		}
+	}
+
+	&.dot {
+		padding: 0;
+
+		.title {
+			display: none;
+		}
+	}
+
+	.dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: #fff;
+
+		&.chua_thanh_toan {
+			background: #ff8849;
+		}
+
+		&.cho_xac_nhan {
+			background: #7d8c9e;
+		}
+
+		&.da_xac_nhan {
+			background: #00b2ff;
+		}
+
+		&.da_duyet {
+			background: #42d684;
+		}
+
+		&.cho_kham {
+			background: #edad31;
+		}
+
+		&.den_luot_kham {
+			background: #738fd9;
+		}
+
+		&.dang_kham {
+			background: #007eda;
+		}
+
+		&.da_kham {
+			background: #76b727;
+		}
+
+		&.tu_choi {
+			background: #df54ca;
+		}
+
+		&.da_huy {
+			background: #dc5050;
+		}
+	}
+
+	.title {
+		font-weight: 500;
+		font-size: 14px;
+		color: #fff;
+	}
+}

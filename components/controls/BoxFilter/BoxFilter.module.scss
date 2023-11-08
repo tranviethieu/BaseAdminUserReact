@@ -1,0 +1,136 @@
+@import '../../../styles/variables';
+
+.container {
+	padding: 12px 0;
+	border-top: 1px solid #edf2f6;
+	border-bottom: 1px solid #edf2f6;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.list_filter {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.box_icon {
+	color: #515c69;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+
+	&.down {
+		transform: rotate(180deg);
+	}
+}
+
+.box_item {
+	cursor: pointer;
+	user-select: none;
+	height: 32px;
+	border: 1.5px solid #edf2f6;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 0 8px;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: rgba(244, 244, 244, 0.5);
+		border: 1.5px solid #d2f9fc;
+	}
+
+	&.active {
+		border: 1.5px solid #d2f9fc;
+	}
+}
+
+.text {
+	font-weight: 500;
+	min-width: 90px;
+	font-size: 12px;
+	color: #515c69;
+	transition: 0.3s;
+}
+
+.box_input {
+	position: relative;
+	height: 32px;
+	width: 360px;
+}
+
+.input {
+	user-select: none;
+	height: 100%;
+	width: 100%;
+	background: #ffffff;
+	border: 1.5px solid #edf2f6;
+	border-radius: 8px;
+	padding: 0 12px;
+	font-weight: 500;
+	font-size: 12px;
+	color: #7e8995;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+	padding-right: 32px;
+}
+
+.icon_search {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	padding: 0 6px;
+}
+
+.list_status {
+	width: 150px;
+	padding: 6px 8px;
+	background: #ffffff;
+	box-shadow: 0px 32px 80px rgba(113, 122, 130, 0.12),
+		0px 8px 16px rgba(113, 122, 130, 0.12),
+		0px 4px 8px rgba(113, 122, 130, 0.08),
+		0px 3px 4px rgba(113, 122, 130, 0.03);
+	border-radius: 8px;
+
+	.item_status {
+		cursor: pointer;
+		padding: 6px;
+		transition: 0.3s;
+		border-radius: 6px;
+
+		&:hover {
+			background: #edf2f6;
+		}
+
+		& + .item_status {
+			margin-top: 2px;
+		}
+
+		&.active_status {
+			background: #edf2f6;
+		}
+	}
+
+	.text_status {
+		font-weight: 500;
+		font-size: 13px;
+		color: #515c69;
+	}
+}

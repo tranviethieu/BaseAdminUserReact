@@ -1,0 +1,146 @@
+@import '../../../../../styles/color';
+
+.calendar {
+	user-select: none;
+	max-width: 300px;
+	min-width: 300px;
+	margin: 0 auto;
+	background-color: #ffff;
+	border-radius: 8px;
+	padding-bottom: 5px;
+	box-shadow: 1.07582px 0px 10.7582px rgba(171, 165, 165, 0.15),
+		1.07582px 6.45494px 10.7582px rgba(202, 194, 194, 0.2);
+	color: #000;
+
+	.month {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 12px;
+		font-size: 15px;
+		font-weight: 600;
+		color: #303b48;
+
+		.btnMonth {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			font-size: 16px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+
+	.day {
+		border-top: 1px solid #e3edf6;
+		font-size: 14px;
+		font-weight: 600;
+		padding: 4px 8px;
+		padding-top: 8px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	.itemDay {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #828ea7;
+	}
+}
+
+.listDate {
+	padding: 4px 8px;
+	display: grid;
+	gap: 2px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dateItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 500;
+	color: #303b48;
+	padding: 4px 6px;
+	transition: 0.3s;
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.6;
+	}
+}
+
+.dateText {
+	position: relative;
+	z-index: 2;
+}
+
+.outDate {
+	color: #303b48;
+}
+
+.current {
+	color: $primary;
+	border: 1px solid $primary;
+	border-radius: 4px;
+}
+
+.active {
+	background-color: #2a85ff;
+	border-radius: 4px;
+
+	.dateText {
+		color: #fff;
+	}
+}
+
+.monthText {
+	position: relative;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+		&::after {
+			bottom: -9px;
+		}
+	}
+}
+
+.dataMonth {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 6px;
+	padding: 6px;
+}
+
+.itemMonth {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #2d2d2d;
+	border-radius: 4px;
+	padding: 6px 12px;
+	font-weight: 500;
+	font-size: 14px;
+	border: 1px solid transparent;
+
+	&:hover {
+		border: 1px solid #f2f2f2;
+		background-color: #f2f2f2;
+	}
+
+	&.active {
+		background-color: #2a85ff;
+		border: 1px solid $primary;
+		color: $light;
+	}
+}
+
+.disable {
+	color: #9c9c9c;
+}

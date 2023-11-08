@@ -1,0 +1,143 @@
+@import '../../../../../../styles/variables';
+
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.right {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	.icon_dots {
+		position: relative;
+		cursor: pointer;
+		width: 32px;
+		height: 32px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 8px;
+		box-shadow: 0px 8px 10px rgba(82, 103, 118, 0.02),
+			0px 4px 2px rgba(82, 103, 118, 0.0249673),
+			0px 2px 1px rgba(82, 103, 118, 0.0196587);
+		background: #ffffff;
+		transition: 0.3s;
+		z-index: 1;
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+
+	.hover {
+		width: 172px;
+		background: #ffffff;
+		box-shadow: 0px 71px 251px rgba(123, 142, 163, 0.07),
+			0px 29.6621px 114.189px rgba(123, 142, 163, 0.0529135),
+			0px 15.8588px 57.9577px rgba(123, 142, 163, 0.0470784),
+			0px 8.8903px 26.676px rgba(123, 142, 163, 0.0426209),
+			0px 4.72157px 9.28936px rgba(123, 142, 163, 0.0373072),
+			0px 1.96475px 1.20887px rgba(123, 142, 163, 0.028439);
+		border-radius: 10px;
+		padding: 10px;
+		margin-top: 4px;
+
+		.item_hover {
+			cursor: pointer;
+			user-select: none;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			padding: 8px;
+			border-radius: 6px;
+			transition: 0.3s;
+
+			&:hover {
+				background: #f8f8f8;
+			}
+
+			& + .item_hover {
+				margin-top: 4px;
+			}
+
+			.icon_hover {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.text_hover {
+				font-weight: 500;
+				font-size: 14px;
+				color: #303c4f;
+			}
+		}
+	}
+
+	.end {
+		cursor: pointer;
+		user-select: none;
+		height: 32px;
+		padding: 0 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1.5px solid #edf2f6;
+		border-radius: 8px;
+		background: #ffffff;
+		white-space: nowrap;
+		opacity: 1;
+		transition: 0.3s;
+
+		&:active {
+			transform: scale(0.9);
+		}
+
+		.text_end {
+			font-weight: 600;
+			font-size: 13px;
+			color: #303c4f;
+		}
+	}
+}
+
+.left {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.box_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	user-select: none;
+	color: #4d5a66;
+	font-weight: 500;
+	font-size: 13px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+	-webkit-line-clamp: 1;
+}
+
+.link {
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@media (max-width: $widthMobile) {
+}

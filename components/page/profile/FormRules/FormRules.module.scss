@@ -1,0 +1,40 @@
+@import '../../../../styles/variables';
+
+.container {
+	height: calc(100vh - $height-header - ($padding * 6));
+	overflow-y: scroll;
+	padding-right: 32px;
+
+	.main {
+		width: 100%;
+	}
+}
+
+.des {
+	margin-top: 8px;
+	margin-bottom: 16px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #4d5a66;
+	text-align: justify;
+}
+
+.item {
+	& + .item {
+		margin-top: 16px;
+	}
+}
+
+.title {
+	font-weight: 700;
+	font-size: 18px;
+	color: #303c4f;
+	margin-bottom: 8px;
+}
+
+.title_des {
+	font-weight: 500;
+	font-size: 14px;
+	color: #4d5a66;
+	text-align: justify;
+}

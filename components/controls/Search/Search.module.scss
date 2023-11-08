@@ -1,0 +1,33 @@
+.container {
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #303b48;
+  padding: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+
+  .icon {
+    width: 20px;
+  }
+
+  &.style2 {
+    background-color: #faf9f9;
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: text;
+
+    input {
+      display: block;
+      flex: 1;
+      outline: none;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}

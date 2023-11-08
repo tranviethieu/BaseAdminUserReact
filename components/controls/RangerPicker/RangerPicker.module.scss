@@ -1,0 +1,32 @@
+@import '../../../styles/color';
+
+.date {
+	border: 1px transparent solid;
+	border-radius: 8px;
+	background-color: transparent;
+	color: #fafafa;
+	padding: 10px;
+
+	&:hover {
+		border: 1px transparent solid;
+	}
+}
+
+.date > input {
+	color: #ffffff !important;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 4px;
+	border-radius: 8px;
+	border: 1px $neutral_2 solid;
+	background-color: $neutral_1;
+}
+
+.btnClose {
+	cursor: pointer;
+	margin-left: 4px;
+}

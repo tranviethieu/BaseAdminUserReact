@@ -1,0 +1,103 @@
+.container {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 4px 0;
+	border-bottom: 1px solid #edf2f6;
+
+	&:nth-child(1) {
+		border-top: 1px solid #edf2f6;
+	}
+}
+
+.avatar {
+	position: relative;
+	width: 40px;
+	height: 40px;
+
+	.image {
+		border-radius: 50%;
+	}
+}
+
+.gender {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ff6a55;
+	border: 1px solid #ffffff;
+
+	&.male {
+		background: #42d684;
+	}
+}
+
+.icon_female {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.infoUser {
+	padding-right: 30px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 20px;
+	min-width: 160px;
+
+	.name {
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-break: break-word;
+	}
+
+	.phone {
+		margin-top: 4px;
+		font-size: 12px;
+		font-weight: 400;
+		color: #7e8995;
+	}
+}
+
+.infoCalendar {
+	flex: 1;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 20px;
+
+	.result {
+		font-size: 12px;
+		color: #7e8995;
+		font-weight: 400;
+		margin-top: 4px;
+	}
+}
+
+.btnOption {
+	width: 28px;
+	height: 28px;
+	background: #ffffff;
+	border: 1px solid #edf2f6;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	color: #7e8995;
+	font-size: 18px;
+	transition: 0.3s;
+
+	&:hover {
+		background: #ededed;
+	}
+}

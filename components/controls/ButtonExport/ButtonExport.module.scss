@@ -1,0 +1,27 @@
+.container {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: #f8f8f8;
+	border: 1px solid #edf2f6;
+	border-radius: 6px;
+	padding: 6px 12px;
+	transition: 0.3s;
+
+	.icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	&:active {
+		transform: scale(0.9);
+	}
+
+	.text {
+		font-weight: 600;
+		font-size: 14px;
+		color: #303c4f;
+	}
+}

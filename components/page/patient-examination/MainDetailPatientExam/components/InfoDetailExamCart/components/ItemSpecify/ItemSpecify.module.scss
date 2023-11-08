@@ -1,0 +1,141 @@
+@import '../../../../../../../../styles/variables';
+
+.item_specify {
+	height: 60px;
+	display: grid;
+	grid-template-columns: 5fr 2fr 3fr;
+	gap: 20px;
+	border-top: 1px solid #edf2f6;
+	padding: 8px 0;
+}
+
+.col_1 {
+	.type_specify {
+		color: #303c4f;
+		font-weight: 500;
+		font-size: 13px;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-break: break-word;
+	}
+
+	.des_specify {
+		margin-top: 4px;
+		color: #7e8995;
+		font-weight: 400;
+		font-size: 12px;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-break: break-word;
+	}
+}
+
+.col_2 {
+	.time_create {
+		color: #303c4f;
+		font-weight: 500;
+		font-size: 13px;
+	}
+
+	.status {
+		display: flex;
+		align-items: center;
+		margin-top: 4px;
+
+		&.DAXL {
+			color: #ff7a00;
+		}
+		&.DXL {
+			color: #00b1ff;
+		}
+		&.CXL {
+			color: #4cd28a;
+		}
+	}
+
+	.dot {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.text_status {
+		font-weight: 500;
+		font-size: 12px;
+	}
+}
+
+.col_3 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.return {
+		color: #303c4f;
+		font-weight: 500;
+		font-size: 13px;
+	}
+
+	.time {
+		margin-top: 4px;
+		color: #7e8995;
+		font-weight: 400;
+		font-size: 12px;
+	}
+
+	.right {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		.item {
+			cursor: pointer;
+			user-select: none;
+			width: 26px;
+			height: 26px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 8px;
+			transition: 0.3s;
+		}
+
+		.cancel {
+			background: #fff3f1;
+			border: 1px solid rgba(255, 106, 85, 0.2);
+			color: #ff6a55;
+			transition: 0.3s;
+
+			&:hover {
+				color: #fff;
+				background: #ff6a55;
+				border: 1px solid rgba(255, 106, 85, 0.2);
+			}
+		}
+
+		.detail {
+			background: #f4f4f4;
+			border: 1px solid #edf2f6;
+			color: #303c4f;
+			transition: 0.3s;
+
+			&:hover {
+				background: #7e8995;
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media (max-width: $widthMobile) {
+	.item_specify {
+		min-width: 600px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

@@ -1,0 +1,141 @@
+.container {
+	border-bottom: 1px solid #eaeef3;
+	padding-bottom: 12px;
+
+	& + .container {
+		padding-top: 12px;
+	}
+
+	input {
+		height: 42px;
+		font-weight: 500;
+		font-size: 13px;
+		padding: 10px 16px;
+		border: 1px solid #edf2f6;
+		color: #2f3643;
+		background-color: #f8f8f8;
+		border-radius: 8px;
+		transition: 0.3s;
+
+		&:focus {
+			border: 1px solid #0071ce;
+		}
+
+		&:disabled {
+			background: #dfe0e2;
+		}
+	}
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.name_select {
+	flex: 1;
+}
+
+.input_name {
+	width: 100%;
+}
+
+.input_dosage {
+	width: 142px;
+}
+
+.bottom {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	.input_note {
+		width: 100%;
+	}
+}
+
+.delete {
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: #fff3f1;
+	border: 1px solid rgba(213, 68, 74, 0.2);
+	border-radius: 8px;
+	color: #ff535a;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+
+	&:hover {
+		background: #fff;
+	}
+}
+
+.box_list_prescription {
+	width: 436px;
+	background: #ffffff;
+	box-shadow: 0px 71px 251px rgba(123, 142, 163, 0.07),
+		0px 29.6621px 114.189px rgba(123, 142, 163, 0.0529135),
+		0px 15.8588px 57.9577px rgba(123, 142, 163, 0.0470784),
+		0px 8.8903px 26.676px rgba(123, 142, 163, 0.0426209),
+		0px 4.72157px 9.28936px rgba(123, 142, 163, 0.0373072),
+		0px 1.96475px 1.20887px rgba(123, 142, 163, 0.028439);
+	border-radius: 10px;
+	padding: 12px 0;
+}
+
+.list {
+	max-height: 240px;
+	overflow-y: auto;
+}
+
+.title {
+	padding: 0 0 6px 12px;
+	color: #7e8995;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.item {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	padding: 6px 12px;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: #eeeeee;
+	}
+
+	& + .item {
+		border-top: 1px solid #eaeef3;
+	}
+
+	.name {
+		font-weight: 500;
+		font-size: 13px;
+		color: #2f3643;
+	}
+
+	.des_info {
+		font-weight: 400;
+		font-size: 11px;
+		color: #7e8995;
+		font-style: italic;
+	}
+
+	.type {
+		font-weight: 500;
+		font-size: 13px;
+		color: #2f3643;
+	}
+}

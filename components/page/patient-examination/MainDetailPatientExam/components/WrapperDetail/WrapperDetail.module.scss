@@ -1,0 +1,28 @@
+.container {
+	padding: 16px 20px;
+	background: #ffffff;
+	border-radius: 10px;
+
+	.top {
+		display: flex;
+		align-items: center;
+	}
+
+	.icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 6px;
+	}
+
+	.title {
+		color: #303b48;
+		font-weight: 700;
+		font-size: 16px;
+		margin-top: 2px;
+	}
+
+	.main {
+		margin-top: 14px;
+	}
+}

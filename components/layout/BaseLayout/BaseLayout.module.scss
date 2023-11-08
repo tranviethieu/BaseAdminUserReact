@@ -1,0 +1,98 @@
+@import '../../../styles/color';
+@import '../../../styles/variables';
+
+.container {
+	background-color: $bg_color;
+	min-height: 100vh;
+}
+
+.tab {
+	position: fixed;
+	width: $width-tab;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: width $duration ease-in-out;
+	z-index: 11;
+	background-color: $light;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	right: $padding;
+	left: calc($width-tab + $padding);
+	padding-top: $padding;
+	padding-bottom: $padding;
+	transition: width $duration ease-in-out, left $duration ease-in-out;
+	z-index: 10;
+	background-color: $bg_color;
+
+	.main_header {
+		border-radius: 10px;
+		background-color: $light;
+		height: $height-header;
+		transition: width $duration ease-in-out, left $duration ease-in-out;
+	}
+}
+
+.main {
+	background-color: $bg_color;
+	padding-top: calc($height-header + $padding + $padding);
+	padding-left: calc($width-tab + $padding);
+	padding-right: $padding;
+	transition: padding-left $duration ease-in-out;
+
+	.wrapper {
+		transition: padding-left $duration ease-in-out;
+		padding-bottom: $padding;
+	}
+}
+
+@media (max-width: $widthTablet) {
+	.container {
+		.overlay {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10;
+			backdrop-filter: blur(5px);
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+	}
+
+	.tab {
+		left: -$width-tab;
+		transition: left $duration ease-in-out;
+
+		&.tab_show {
+			left: 0;
+			transition: left $duration ease-in-out;
+		}
+	}
+
+	.header {
+		left: $padding;
+	}
+
+	.main {
+		padding-left: $padding;
+	}
+}
+
+@media (max-width: $widthMobile) {
+	.header {
+		left: $paddingMobile;
+		right: $paddingMobile;
+		padding-top: $paddingMobile;
+		padding-bottom: $paddingMobile;
+	}
+
+	.main {
+		padding-top: calc($height-header + $paddingMobile + $paddingMobile);
+		padding-left: $paddingMobile;
+		padding-right: $paddingMobile;
+	}
+}

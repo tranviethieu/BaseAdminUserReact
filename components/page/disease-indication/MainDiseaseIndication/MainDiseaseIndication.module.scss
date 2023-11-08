@@ -1,0 +1,42 @@
+.container {
+	background-color: #fff;
+	padding: 12px 16px;
+	border-radius: 10px;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+
+.filter {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.clear {
+	cursor: pointer;
+	user-select: none;
+	width: fit-content;
+	width: 32px;
+	height: 32px;
+	border: 1.5px solid #edf2f6;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #515c69;
+	transition: 0.3s;
+
+	&:hover {
+		color: rgb(245, 76, 76);
+		border: 1.5px solid rgb(245, 76, 76);
+	}
+}
+
+.main {
+	margin-top: 8px;
+}

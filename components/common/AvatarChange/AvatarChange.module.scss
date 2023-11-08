@@ -1,0 +1,43 @@
+.container {
+	position: relative;
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	border: 1.5px solid #ffffff;
+	box-shadow: 0px 0px 0px 2px #edf2f6;
+	overflow: hidden;
+}
+
+.avatar {
+	object-fit: cover;
+}
+
+.input {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: block;
+	z-index: 1;
+	left: 0;
+	bottom: 0;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 24px;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+@media (max-width: 764px) {
+	.container {
+		position: relative;
+		width: 70px;
+		height: 70px;
+	}
+}

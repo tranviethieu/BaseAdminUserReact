@@ -1,0 +1,172 @@
+.container {
+	position: relative;
+	border-left: 1px solid #edf2f6;
+	min-height: 32px;
+	margin-left: 46px;
+	padding: 8px 12px;
+	font-weight: 500;
+
+	& > .dot1 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translate(-50%, -50%);
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #99a2b3;
+	}
+
+	.time {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #7e8995;
+		font-size: 12px;
+		left: -44px;
+	}
+}
+
+.main {
+	border: 1.5px solid #f4f4f4;
+	border-radius: 6px;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+
+	.status {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #edad31;
+	}
+
+	.timeExam {
+		font-size: 12px;
+	}
+
+	.nameUser {
+		border-left: 1px solid #edf2f6;
+		padding-left: 10px;
+	}
+
+	.statusText {
+		flex: 1;
+	}
+}
+
+.justOnly {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.mutilUser {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.groupAvatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+	width: 20px;
+	height: 20px;
+	border: 2px solid #fff;
+	& + & {
+		margin-left: -6px;
+	}
+}
+
+.dot {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #fff;
+	margin-left: -6px;
+	z-index: 1;
+	background-color: #007eda;
+	border-radius: 50%;
+	font-weight: 600;
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.address_type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnOption {
+	width: 16px;
+	height: 16px;
+	background: #ffffff;
+	border: 1px solid #edf2f6;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	color: #7e8995;
+	font-size: 14px;
+
+	&:nth-child(1) {
+		border-color: #4cd28a;
+		color: #4cd28a;
+	}
+
+	&:nth-child(2) {
+		border-color: #ff6a55;
+		color: #ff6a55;
+	}
+
+	&.dropDown {
+		border-color: #e3e3e3;
+		color: #99a2b3;
+	}
+}
+
+.groupBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+}
+
+.mainDropDown {
+	padding: 12px;
+	background-color: #ffffff;
+	box-shadow: 0px 71px 251px rgba(123, 142, 163, 0.07),
+		0px 29.6621px 114.189px rgba(123, 142, 163, 0.0529135),
+		0px 15.8588px 57.9577px rgba(123, 142, 163, 0.0470784),
+		0px 8.8903px 26.676px rgba(123, 142, 163, 0.0426209),
+		0px 4.72157px 9.28936px rgba(123, 142, 163, 0.0373072),
+		0px 1.96475px 1.20887px rgba(123, 142, 163, 0.028439);
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 8px;
+}
+
+.itemDrop {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px;
+	border: 1.5px solid #f4f4f4;
+
+	.statusText {
+		margin-right: 100px;
+	}
+}

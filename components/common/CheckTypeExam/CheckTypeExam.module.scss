@@ -1,0 +1,52 @@
+.container {
+	width: fit-content;
+	border-radius: 6px;
+	padding: 4px 8px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	white-space: nowrap;
+
+	&.KTV {
+		background: rgba(76, 210, 138, 0.1);
+	}
+
+	&.KTT {
+		background: rgba(0, 139, 218, 0.1);
+	}
+
+	&.KTN {
+		background: rgba(125, 100, 223, 0.1);
+	}
+
+	.dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+
+		&.KTV {
+			background: #25be6c;
+		}
+		&.KTT {
+			background: #008bda;
+		}
+		&.KTN {
+			background: #7d64df;
+		}
+	}
+
+	.title {
+		font-weight: 500;
+		font-size: 14px;
+
+		&.KTV {
+			color: #25be6c;
+		}
+		&.KTT {
+			color: #008bda;
+		}
+		&.KTN {
+			color: #7d64df;
+		}
+	}
+}

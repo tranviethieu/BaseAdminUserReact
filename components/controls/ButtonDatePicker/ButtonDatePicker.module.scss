@@ -1,0 +1,41 @@
+.calendar {
+	cursor: pointer;
+	user-select: none;
+	height: 32px;
+	border: 1.5px solid #edf2f6;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 0 8px;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: rgba(244, 244, 244, 0.5);
+		border: 1.5px solid #d2f9fc;
+	}
+
+	&.active {
+		border: 1.5px solid #d2f9fc;
+	}
+}
+
+.box_icon {
+	color: #515c69;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+
+	&.down {
+		transform: rotate(180deg);
+	}
+}
+
+.text {
+	font-weight: 500;
+	min-width: 90px;
+	font-size: 12px;
+	color: #515c69;
+	transition: 0.3s;
+}

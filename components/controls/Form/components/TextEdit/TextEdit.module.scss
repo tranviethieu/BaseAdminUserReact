@@ -1,0 +1,57 @@
+.container {
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #303b48;
+  padding: 6px 4px;
+  font-weight: 500;
+
+  &:empty:before {
+    content: attr(placeholder);
+    color: #828ea7;
+    font-weight: 500;
+  }
+
+  &:hover {
+    cursor: text;
+  }
+
+  &:focus-visible {
+    border: 1px solid #ccc;
+  }
+
+  &.fz24 {
+    font-size: 24px;
+  }
+
+  &.fw600 {
+    font-weight: 600;
+  }
+
+  &.bgGrey {
+    &:focus-visible {
+      background-color: #f4f4f4;
+      border: 1px solid #f4f4f4;
+      &:empty:before {
+        color: #555555;
+      }
+    }
+  }
+
+  &.maxWith100 {
+    max-width: 100%;
+  }
+
+  &.maxWith100 {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    br {
+      display: none;
+    }
+    * {
+      display: inline;
+      white-space: nowrap;
+    }
+  }
+}

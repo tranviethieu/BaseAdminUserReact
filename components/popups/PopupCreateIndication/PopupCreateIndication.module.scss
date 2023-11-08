@@ -1,0 +1,165 @@
+.container {
+	width: 552px;
+	padding: 24px 28px;
+	background: #ffffff;
+	box-shadow: 0px 37px 48px rgba(82, 103, 118, 0.04),
+		0px 12px 16px rgba(82, 103, 118, 0.03),
+		0px 8px 10px rgba(82, 103, 118, 0.02),
+		0px 6px 4px rgba(82, 103, 118, 0.03),
+		0px 4px 2px rgba(82, 103, 118, 0.0249673),
+		0px 2px 1px rgba(82, 103, 118, 0.0196587);
+	border-radius: 16px;
+	.title {
+		color: #303b48;
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 4px;
+	}
+
+	.des {
+		font-weight: 400;
+		font-size: 13px;
+		color: #4d5a66;
+		margin-bottom: 12px;
+	}
+
+	.textarea {
+		margin-bottom: 12px;
+		width: 100%;
+		padding: 12px 16px;
+		background: #f8f8f8;
+		height: 160px;
+		border: 1px solid #edf2f6;
+		border-radius: 10px;
+		resize: none;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 20px;
+		color: #303c4f;
+	}
+
+	.title_2 {
+		font-weight: 600;
+		font-size: 18px;
+		color: #303c4f;
+		margin-bottom: 2px;
+	}
+
+	.des_2 {
+		color: #7d8c9e;
+		font-weight: 400;
+		font-size: 13px;
+		margin-bottom: 12px;
+	}
+
+	.btn_image {
+		cursor: pointer;
+		user-select: none;
+		width: fit-content;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 4px;
+		border: 1px solid #edf2f6;
+		border-radius: 8px;
+		background: #f8f8f8;
+		padding: 8px 14px;
+		margin-bottom: 12px;
+		transition: 0.3s;
+
+		&:hover {
+			background: #fff;
+		}
+
+		&:active {
+			transform: scale(0.9);
+		}
+
+		.icon_add {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.text_btn {
+			color: #303b48;
+			font-weight: 500;
+			font-size: 13px;
+		}
+	}
+
+	.list_image {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	.box_image {
+		border: 1.5px solid #eaeef3;
+		position: relative;
+		width: 64px;
+		height: 64px;
+		user-select: none;
+		border-radius: 4px;
+		overflow: hidden;
+
+		.delete {
+			cursor: pointer;
+			position: absolute;
+			top: 2px;
+			right: 2px;
+			width: 18px;
+			height: 18px;
+			background: #ffffff;
+			box-shadow: 0px 37px 48px rgba(82, 103, 118, 0.04),
+				0px 12px 16px rgba(82, 103, 118, 0.03),
+				0px 8px 10px rgba(82, 103, 118, 0.02),
+				0px 6px 4px rgba(82, 103, 118, 0.03),
+				0px 4px 2px rgba(82, 103, 118, 0.0249673),
+				0px 2px 1px rgba(82, 103, 118, 0.0196587);
+			border-radius: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #8496ac;
+			transition: 0.3s;
+
+			&:hover {
+				color: red;
+			}
+
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+	}
+
+	.btn {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.groupBtnPopup {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.icon_close {
+		cursor: pointer;
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #000;
+		transition: 0.3s;
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+}

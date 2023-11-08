@@ -1,0 +1,62 @@
+@import '../../../styles/variables';
+
+.container {
+	display: grid;
+	grid-template-columns: minmax(704px, 1fr) 1fr;
+	height: 100vh;
+}
+
+.logo {
+	max-width: 40%;
+
+	.img {
+		padding-top: 20%;
+		width: 100%;
+	}
+}
+
+.main {
+	padding: 100px 124px;
+}
+
+.form {
+	margin-top: 60px;
+}
+
+.background {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@media (max-width: $widthTablet) {
+	.container {
+		grid-template-columns: minmax(600px, 1fr) 1fr;
+	}
+
+	.main {
+		padding: 80px 48px;
+	}
+}
+
+@media (max-width: $widthMobile) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.logo {
+		max-width: 42%;
+	}
+
+	.main {
+		padding: 44px 12px 0 12px;
+	}
+
+	.form {
+		margin-top: 32px;
+	}
+
+	.background {
+		display: none;
+	}
+}

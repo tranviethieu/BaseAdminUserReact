@@ -1,0 +1,20 @@
+@import '../../../../../../styles/variables';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.bottom {
+	flex: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+@media (max-width: $widthMobile) {
+	.bottom {
+		grid-template-columns: 1fr;
+	}
+}

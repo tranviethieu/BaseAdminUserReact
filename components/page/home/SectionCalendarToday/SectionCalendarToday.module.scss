@@ -1,0 +1,98 @@
+@import '../../../../styles/variables';
+
+.container {
+	padding: 20px 18px;
+	background: #ffffff;
+	border-radius: 10px;
+	min-height: 50vh;
+}
+
+.head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	h3 {
+		font-weight: 600;
+		font-size: 20px;
+	}
+
+	span {
+		margin-top: 5px;
+	}
+}
+
+.btn {
+	background: #ffffff;
+	border: 1px solid #eaeef3;
+	border-radius: 26px;
+	padding: 2px 8px;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+
+	.icon {
+		font-size: 16px;
+	}
+}
+
+.noti {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.image_noti {
+	width: 60px;
+	height: 60px;
+}
+
+.title_noti {
+	margin-top: 12px;
+	color: #303c4f;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.text_noti {
+	color: #4d5a66;
+	font-weight: 400;
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+// .main {
+// 	max-height: 40vh;
+// 	overflow-y: scroll;
+// }
+
+@media (max-width: $widthMobile) {
+	.container {
+		padding: 12px 16px;
+	}
+
+	.title {
+		gap: 6px;
+
+		h3 {
+			font-weight: 600;
+			font-size: 15px;
+		}
+
+		span {
+			margin-top: 2px;
+		}
+	}
+}

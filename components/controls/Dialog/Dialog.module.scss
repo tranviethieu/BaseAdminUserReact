@@ -1,0 +1,62 @@
+@import '../../../styles/color';
+
+.popup {
+	background-color: $light;
+	width: 350px;
+	max-width: 95vw;
+	padding: 24px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 12px;
+
+	.image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.titlePopup {
+		font-weight: 700;
+		font-size: 24px;
+		color: #303b48;
+		text-align: center;
+		margin-top: 12px;
+	}
+
+	.note {
+		font-weight: 500;
+		font-size: 14px;
+		color: #7e8995;
+		margin-top: 8px;
+		text-align: center;
+	}
+
+	.groupBtnPopup {
+		margin-top: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+	}
+}
+
+@media (max-width: 764px) {
+	.popup {
+		padding: 12px 24px;
+
+		.titlePopup {
+			font-size: 18px;
+		}
+
+		.note {
+			margin-top: 6px;
+			font-size: 13px;
+		}
+
+		.groupBtnPopup {
+			margin-top: 24px;
+			gap: 12px;
+		}
+	}
+}

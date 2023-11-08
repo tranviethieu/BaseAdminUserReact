@@ -1,0 +1,179 @@
+@import '../../../../../styles/color';
+
+.container {
+	& + .container {
+		margin-top: 24px;
+	}
+
+	.icon {
+		font-size: 18px;
+		margin-left: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #99a2b3;
+	}
+
+	.group {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid $secondary_6;
+		border-radius: 8px;
+
+		&.bgGrey {
+			border: 1px solid #f4f4f4 !important;
+			background-color: #f4f4f4;
+			border-radius: 8px !important;
+
+			.inputElement {
+				background-color: #f4f4f4;
+			}
+		}
+
+		&.done {
+			border: 1px solid $success !important;
+			.icon {
+				color: $success !important;
+			}
+		}
+
+		&.focus {
+			border: 1px solid #2a85ff !important;
+			color: $focus !important;
+			background-color: $light !important;
+			.inputElement {
+				background-color: $light !important;
+			}
+
+			.icon {
+				color: $focus !important;
+			}
+		}
+
+		&.iconGroup {
+			.inputElement {
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		}
+
+		&.disabled {
+			.inputElement {
+				background: #dfe0e2;
+			}
+		}
+
+		.inputGroup {
+			flex: 1;
+		}
+
+		.btn {
+			height: 100%;
+			padding: 7px 24px;
+			border-radius: 4px;
+			margin-right: 2px;
+			background-color: $secondary_6;
+			cursor: no-drop;
+			user-select: none;
+			color: $light;
+			transition: 0.3s;
+
+			&.active {
+				background-color: $primary;
+				cursor: pointer;
+				&:hover {
+					opacity: 0.8;
+				}
+
+				&:active {
+					transform: scale(0.9);
+				}
+			}
+		}
+
+		.inputElement {
+			border: 1px solid transparent;
+			padding: 10px 24px;
+		}
+	}
+
+	.label {
+		font-weight: 500;
+		margin-bottom: 8px;
+		display: block;
+	}
+
+	.inputGroup {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.toggleType {
+		user-select: none;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #5e6167;
+		font-size: 20px;
+		margin-right: 12px;
+	}
+
+	.inputElement {
+		width: 100%;
+		padding: 10px 24px;
+		border: 1px solid $secondary_6;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 14px;
+		color: #303c4f;
+	}
+
+	.note {
+		margin-left: 12px;
+	}
+
+	.errorText {
+		margin-left: 12px;
+		font-size: 14px;
+	}
+}
+
+.error {
+	.inputGroup {
+		border-radius: 8px;
+		background-color: $light;
+
+		.inputElement {
+			background-color: $light !important;
+		}
+	}
+
+	.errorText,
+	.icon {
+		color: $danger;
+	}
+
+	.group {
+		border: 1px solid $danger !important;
+	}
+
+	.inputElement {
+		&::placeholder {
+			color: $danger;
+		}
+	}
+
+	.toggleType {
+		color: $danger;
+	}
+}
+
+.focus {
+	.inputElement {
+		border: 1px solid $focus;
+	}
+}
