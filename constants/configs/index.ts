@@ -29,6 +29,33 @@ ArNNBDDifEj+H14lkInvEKLcISuQulowHrrCgm6lt+g/LxpW4dwMvhyL4lNAatok
 DhElJrfUf1WXkbaZuG9XkDpdYDJbULxSltXmrPY4NS3JN5Z3lHKafdAzs69Rt20Z
 NQIDAQAB
 -----END PUBLIC KEY-----`;
+export const listMenus: Array<any> = [
+	{
+		mainTitle: 'MENU',
+		title: '',
+		icon: CalendarEdit,
+		href: '',
+	},
+	{
+		mainTitle: '',
+		title: 'Tổng quan',
+		icon: Health,
+		href: '/',
+	},
+	{
+		mainTitle: 'KHÁCH HÀNG',
+		title: '',
+		icon: CalendarEdit,
+		href: '',
+	},
+	{
+		mainTitle: 'KHÁCH HÀNG',
+		title: 'Cơ sở y tế',
+		icon: CalendarEdit,
+		href: '/hospital',
+	},
+	
+];
 
 export const listMenu: Array<any> = [
 	[
@@ -40,9 +67,9 @@ export const listMenu: Array<any> = [
 	],
 	[
 		{
-			title: 'Quản lý đặt khám',
+			title: 'Cơ sở y tế',
 			icon: CalendarEdit,
-			href: '/appointment-schedule',
+			href: '/hospital',
 		},
 		{
 			title: 'Quản lý khám bệnh',

@@ -51,6 +51,8 @@ function FormLogin() {
 					isApp: false,
 				}),
 			}).then((data) => {
+				console.log(data)
+				debugger
 				if (data) {
 					dispatch(setToken(data.token));
 					dispatch(setAccountId(data.accountUserUuid));

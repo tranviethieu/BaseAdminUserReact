@@ -15,5 +15,6 @@ export default function Home() {
 }
 
 Home.getLayout = function (page: ReactElement) {
-	return <BaseLayout title='Tổng quan'>{page}</BaseLayout>;
+	return <BaseLayout title='Tổng quan'><div></div></BaseLayout>;
+	// return <BaseLayout title='Tổng quan'>{page}</BaseLayout>;
 };
